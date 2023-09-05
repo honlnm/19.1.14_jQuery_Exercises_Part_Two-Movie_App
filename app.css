@@ -1,0 +1,155 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: auto;
+    background-color: rgb(255, 169, 32);
+}
+
+h1 {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    text-align: center;
+    color: rgb(128, 7, 7);
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+h2 {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+    text-align: center;
+    font-style: italic;
+
+}
+
+#form-container {
+    grid-column: 2 / 6;
+    grid-row: 3 / 5;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    margin-bottom: 15px;
+}
+
+label[for=movie-title] {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+#movie-title {
+    grid-column: 1 /span 2;
+    grid-row: 2;
+}
+
+label[for=movie-rating] {
+    grid-column: 3/ span 2;
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+#movie-rating {
+    grid-column: 3/ span 2;
+    grid-row: 2;
+}
+
+#submit-button {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+hr {
+    grid-column: 1 / span 6;
+    grid-row: 5;
+    border: 1px solid black;
+    width: 100%;
+}
+
+#ratings-label-container {
+    grid-column: 1 / span 6;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1;
+}
+
+
+
+#label-for-rated-movie-titles {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0.5px;
+    border-bottom-width: 2px;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.498);
+}
+
+#label-for-ratings {
+    grid-column: 4 / span 2;
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0.5px;
+    border-bottom-width: 2px;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.498);
+}
+
+#label-for-remove-buttons {
+    grid-column: 6;
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0.5px;
+    border-bottom-width: 2px;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.498);
+}
+
+
+.rated {
+    grid-column: 1 / span 6;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+hgroup {
+    grid-column: 1 / span 7;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+h3 {
+    grid-column: 2 / span 2;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    margin: 0;
+}
+
+p {
+    grid-column: 4 / span 2;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    margin: 0;
+}
+
+.delete-button {
+    grid-column: 6;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+}
